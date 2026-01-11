@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: process.env.NODE_ENV === 'production' 
+    ? "https://your-backend-url.onrender.com/api" 
+    : "http://localhost:5000/api",
 });
 
 // Add token to requests automatically
