@@ -1,5 +1,5 @@
 const Exam = require("../models/Exam");
-const Registration = require("../models/Registration");
+const Registration = require("../models/registration");
 
 /**
  * STUDENT: Register for an exam
